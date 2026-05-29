@@ -10,13 +10,29 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1e2f1e; scroll-behavior: smooth; }
         h1, h2, h3, .logo-text { font-family: 'Playfair Display', serif; }
-        :root { --verde-profundo: #1B4D2E; --verde-hoja: #2C6E3C; --verde-claro: #E9F3E6; --verde-suave: #D4E8D0; --blanco-puro: #FFFFFF; --gris-claro: #F8F9F8; --sombra-suave: 0 12px 28px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.02); }
+        :root {
+            --verde-profundo: #1B4D2E;
+            --verde-hoja: #2C6E3C;
+            --verde-claro: #E9F3E6;
+            --verde-suave: #D4E8D0;
+            --blanco-puro: #FFFFFF;
+            --gris-claro: #F8F9F8;
+            --sombra-suave: 0 12px 28px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.02);
+        }
         .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
         section { padding: 80px 0; }
         .bg-verde-claro { background-color: var(--verde-claro); }
-        .btn-primary { background-color: var(--verde-profundo); color: white; padding: 12px 28px; border-radius: 40px; font-weight: 600; border: none; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 12px; cursor: pointer; font-size: 1rem; text-decoration: none; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+        .btn-primary {
+            background-color: var(--verde-profundo); color: white; padding: 12px 28px; border-radius: 40px; font-weight: 600;
+            border: none; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 12px; cursor: pointer;
+            font-size: 1rem; text-decoration: none; box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
         .btn-primary:hover { background-color: #0F3E24; transform: translateY(-2px); box-shadow: 0 12px 20px rgba(27,77,46,0.2); }
-        .btn-outline { background-color: transparent; border: 2px solid var(--verde-profundo); color: var(--verde-profundo); padding: 10px 24px; border-radius: 40px; font-weight: 600; transition: 0.3s; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+        .btn-outline {
+            background-color: transparent; border: 2px solid var(--verde-profundo); color: var(--verde-profundo);
+            padding: 10px 24px; border-radius: 40px; font-weight: 600; transition: 0.3s; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 8px;
+        }
         .btn-outline:hover { background-color: var(--verde-profundo); color: white; }
         .section-title { font-size: 2.5rem; font-weight: 700; color: var(--verde-profundo); margin-bottom: 16px; position: relative; display: inline-block; }
         .section-subtitle { font-size: 1.1rem; color: #4a5b4a; max-width: 650px; margin: 0 auto 48px auto; }
@@ -25,7 +41,10 @@
         .logo-area { display: flex; align-items: center; gap: 15px; }
         .logo-img { height: 110px; width: auto; object-fit: contain; }
         .nav-links { display: flex; gap: 16px; list-style: none; }
-        .nav-links a { text-decoration: none; font-weight: 600; background-color: var(--verde-profundo); color: white; padding: 10px 20px; border-radius: 40px; transition: all 0.3s ease; display: inline-block; font-size: 0.95rem; letter-spacing: 0.3px; }
+        .nav-links a {
+            text-decoration: none; font-weight: 600; background-color: var(--verde-profundo); color: white;
+            padding: 10px 20px; border-radius: 40px; transition: all 0.3s ease; display: inline-block; font-size: 0.95rem; letter-spacing: 0.3px;
+        }
         .nav-links a:hover { background-color: #0F3E24; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         .mobile-menu-btn { display: none; font-size: 1.8rem; background: none; border: none; color: var(--verde-profundo); cursor: pointer; }
         .hero { background: linear-gradient(135deg, #FCFDF9 0%, #F1F8EE 100%); padding: 60px 0 80px; }
@@ -35,7 +54,10 @@
         .hero-buttons { display: flex; gap: 20px; flex-wrap: wrap; }
         .hero-image img { width: 100%; border-radius: 32px; box-shadow: var(--sombra-suave); height: 380px; object-fit: cover; }
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; }
-        .feature-card { background: white; border-radius: 28px; padding: 32px 24px; text-align: center; border: 1px solid var(--verde-suave); transition: 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+        .feature-card {
+            background: white; border-radius: 28px; padding: 32px 24px; text-align: center; border: 1px solid var(--verde-suave);
+            transition: 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
         .feature-card i { font-size: 2.8rem; color: var(--verde-profundo); margin-bottom: 20px; }
         .feature-card h3 { font-size: 1.5rem; margin-bottom: 12px; color: var(--verde-profundo); }
         .feature-card p { color: #4a5b4a; }
@@ -71,8 +93,7 @@
     <div class="container">
         <div class="navbar">
             <div class="logo-area">
-                <!-- Usando el nombre real de tu archivo -->
-                <img class="logo-img" src="Logo Piacenza Terraza - Solo árbol.png" alt="Piacenza Terraza" onerror="this.src='https://placehold.co/400x200?text=Piacenza+Terraza&bg_color=1B4D2E&color=white';">
+                <img class="logo-img" src="Logo Piacenza Terraza - Solo árbol.png" alt="Piacenza Terraza" onerror="this.onerror=null; this.src='https://placehold.co/400x200?text=Piacenza+Terraza&bg_color=1B4D2E&color=white';">
             </div>
             <button class="mobile-menu-btn" id="menuToggle"><i class="fas fa-bars"></i></button>
             <ul class="nav-links" id="navLinks">
@@ -98,7 +119,7 @@
                     </div>
                 </div>
                 <div class="hero-image fade-up">
-                    <img src="https://i.imgur.com/YifM2oQ.jpeg" alt="Decoración elegante de mesa">
+                    <img src="https://i.imgur.com/xYYhQXM.jpeg" alt="Decoración elegante de mesa en Piacenza Terraza" onerror="this.src='https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&auto=format';">
                 </div>
             </div>
         </div>
@@ -111,11 +132,31 @@
                 <p class="section-subtitle">Todo lo que necesitas para una celebración perfecta, en un entorno natural con diseño exclusivo.</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card fade-up"><i class="fas fa-archway"></i><h3>Salón Principal</h3><p>Amplio espacio climatizado con capacidad hasta <strong>300 personas</strong>.</p></div>
-                <div class="feature-card fade-up"><i class="fas fa-leaf"></i><h3>Jardín</h3><p>Un espacio verde y acogedor, perfecto para fotografías y momentos al aire libre.</p></div>
-                <div class="feature-card fade-up"><i class="fas fa-table"></i><h3>Mantelería</h3><p>Mantelería de primera calidad, variedad de colores y texturas para cada evento.</p></div>
-                <div class="feature-card fade-up"><i class="fas fa-wine-glass-alt"></i><h3>Cristalería</h3><p>Copas, vasos y piezas de cristal elegantes para brindis y servicio de mesa.</p></div>
-                <div class="feature-card fade-up"><i class="fas fa-utensils"></i><h3>Vajilla</h3><p>Platos, fuentes y juegos de mesa completos, con diseño clásico y moderno.</p></div>
+                <div class="feature-card fade-up">
+                    <i class="fas fa-archway"></i>
+                    <h3>Salón Principal</h3>
+                    <p>Amplio espacio climatizado con capacidad hasta <strong>300 personas</strong>.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Jardín</h3>
+                    <p>Un espacio verde y acogedor, perfecto para fotografías y momentos al aire libre.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <i class="fas fa-table"></i>
+                    <h3>Mantelería</h3>
+                    <p>Mantelería de primera calidad, variedad de colores y texturas para cada evento.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <h3>Cristalería</h3>
+                    <p>Copas, vasos y piezas de cristal elegantes para brindis y servicio de mesa.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Vajilla</h3>
+                    <p>Platos, fuentes y juegos de mesa completos, con diseño clásico y moderno.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -127,15 +168,16 @@
                 <p class="section-subtitle">Momentos reales que capturan la esencia de Piacenza Terraza</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/O5qjkdW.jpeg" alt="Vista amplia del salón principal"></div>
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/TdOQZod.jpeg" alt="Salón principal con invitados"></div>
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/Jz4fO5F.jpeg" alt="Servicio de mantelería y vajilla"></div>
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/kZL3obG.jpeg" alt="Ambiente familiar y acogedor"></div>
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/V6WzT6Z.jpeg" alt="Pareja celebrando un evento especial"></div>
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/bFLER5k.jpeg" alt="Primer plano de cristalería elegante"></div>
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/ssg8UQ2.jpeg" alt="Arreglos florales en mesa"></div>
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/jP7RYJw.jpeg" alt="Jardín con invitados disfrutando"></div>
-                <div class="gallery-item fade-up"><img src="https://i.imgur.com/YifM2oQ.jpeg" alt="Detalle de mesa decorada"></div>
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/xYYhQXM.jpeg" alt="Vista amplia del salón principal" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/AymcLkz.jpeg" alt="Salón principal con invitados" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/bf3gqtz.jpeg" alt="Servicio de mantelería y vajilla" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/TFP9pnR.jpeg" alt="Ambiente familiar y acogedor" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/UG2aLkW.jpeg" alt="Pareja celebrando un evento especial" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/89MwpkT.jpeg" alt="Primer plano de cristalería elegante" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/cvwX1HM.jpeg" alt="Arreglos florales en mesa" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
+                <!-- Se duplica la primera imagen para completar el diseño simétrico -->
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/xYYhQXM.jpeg" alt="Detalle de mesa decorada" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
+                <div class="gallery-item fade-up"><img src="https://i.imgur.com/AymcLkz.jpeg" alt="Ambiente festivo" onerror="this.src='https://placehold.co/600x600?text=Error+de+imagen&bg_color=E9F3E6&color=1B4D2E';"></div>
             </div>
             <div style="text-align: center; margin-top: 48px;">
                 <a href="https://wa.me/59169617639?text=Me%20interesa%20agendar%20una%20visita%20a%20Piacenza%20Terraza" target="_blank" class="btn-primary"><i class="fas fa-camera"></i> Agenda tu visita</a>
@@ -196,15 +238,24 @@
 <script>
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
-    if(menuToggle) menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    }
     document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('active')));
 
     const faders = document.querySelectorAll('.fade-up');
     const appearOnScroll = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if(entry.isIntersecting) { entry.target.classList.add('visible'); appearOnScroll.unobserve(entry.target); } });
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
     }, { threshold: 0.2 });
     faders.forEach(fader => appearOnScroll.observe(fader));
-    window.addEventListener('load', () => faders.forEach(el => { if(el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('visible'); }));
+    window.addEventListener('load', () => faders.forEach(el => {
+        if(el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('visible');
+    }));
 
     document.getElementById('contactQuickForm').addEventListener('submit', (e) => {
         e.preventDefault();
@@ -223,4 +274,3 @@
 </script>
 </body>
 </html>
-Versión definitiva con logo y fotos reales
